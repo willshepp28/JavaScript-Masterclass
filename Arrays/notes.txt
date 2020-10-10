@@ -4,5 +4,15 @@
 
 
 Whats to create a array
-A. let people = new Array();   (constructor)
-B. 
+A. let people = new Array();   (empty array created via Array constructor)
+B. let people = new Array(50) (creating a array via Array constructor with a initial length of 50)
+C. let people = new Array("John", "Bob", "Will"); (a created via Array constructor with 3 items that should be included in the array)
+D. let people = Array(3); ( array created via Array constructor with new keyword omitted, and a initial length of 3)
+E. let people = Array("John");   (creates a array with one item, the string John)
+F. let people = [];   ( empty array created via array literal notation)
+G. let people = [1,2,3];   ( a array with the numbers)
+
+
+
+Fun Facts
+1. Array.from() can be used to create a shallow copy of anther array.
