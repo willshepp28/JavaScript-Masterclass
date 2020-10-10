@@ -1,0 +1,8 @@
+
+1. The array is probably the most used data type in Javascript.
+2. Arrays are differnt in javascript in that they can hold any data type. Which means it can hold a object in one position, a string in another, and a number in another.
+
+
+Whats to create a array
+A. let people = new Array();   (constructor)
+B. 
