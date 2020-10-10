@@ -23,13 +23,14 @@ function getAllUsers() {
 };
 
 
-// Create a function that returns a single user
+// Create a function that returns a single user 0(n)
 function getUserById(id) {
     let user;
 
     for(let i = 0; i < Users.length; i++) {
         if(Users[i].id === id) {
             user = Users[i];
+            break;
         }
     };
 
@@ -55,6 +56,12 @@ function addNewUser(username, firstname, lastname, bio, profile_picture) {
 }
 
 
+// Create a function that removes the first user 0(n)
+function deleteFirstUser(){
+    Users.pop();
+}
+
+
 // Create a function to update the user bio
 
 
@@ -62,3 +69,38 @@ function addNewUser(username, firstname, lastname, bio, profile_picture) {
 
 
 // Create a function to delete user account
+function deleteUserById(id) {
+    for(let i = 0; i < Users.length; i++){
+        if(Users[i].id === id){
+            Users.splice(i, 1);
+            break;
+        }
+    }
+
+};
+
+
+// Get all users that have active accounts
+function getUsersWithActiveAccounts(){
+    return Users.filter(users => users.active = true);
+};
+
+
+// Get all users with deactived accounts
+function getUnactiveUsers(){
+    return Users.filter(users => users.active = false);
+}
+
+
+// Get all users password (laughs in unprofessionally lol)
+function getAllPasswordUsingForEach(){
+    let passwords = [];
+    Users.forEach(user => passwords.push({ username: user.username, password: user.password }))
+    return passwords;
+};
+
+
+function getAllPasswordsUsingMap(){
+    return Users.map(user => { return { username: user.username, password: user.password}})
+}
+
