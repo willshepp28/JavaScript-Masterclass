@@ -14,5 +14,8 @@ G. let people = [1,2,3];   ( a array with the numbers)
 
 
 
-Fun Facts
+Fun Facts & Tips
 1. Array.from() can be used to create a shallow copy of anther array.
+2. You can use Array.from to turn parameters that are passed in a function into an array.
+3. Array.of will convert a list of arguments into an array
+4. 

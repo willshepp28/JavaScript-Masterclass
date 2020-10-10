@@ -1,0 +1,16 @@
+
+  What is Instagram?
+        Instagram is a free photo and video sharing app available on iPhone and Android. People can upload photos or videos to our service and share them with their followers or with a select group of friends. They can also view, comment and like posts shared by their friends on Instagram. Anyone 13 and older can create an account by registering an email address and selecting a username.
+
+
+    
+    REQUIRMENTS
+
+     - Users should be able to login
+     - Users should be able to signup
+     - Users should be able to add profile picture
+     - Users should be able to create posts
+     - Users should be able to comment on posts
+     - Users should be able to like posts
+     - Users should be able to follow other users
+     - Users should be able to to see other users that they follow posts
